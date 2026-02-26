@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biodata Diri</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(135deg, #ff86c3, #c32a90);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      color: #444;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 28px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+      width: 380px;
+      text-align: center;
+      padding: 38px 30px;
+      position: relative;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 28px;
+      background: linear-gradient(120deg, rgba(255,134,195,0.15), transparent);
+      pointer-events: none;
+    }
+
+    .profile-img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #ff86c3;
+      margin-bottom: 15px;
+      box-shadow: 0 0 18px rgba(255,134,195,0.45);
+    }
+
+    h1 {
+      margin: 8px 0 6px;
+      font-size: 30px;
+      font-weight: 700;
+      background: linear-gradient(90deg, #ff86c3, #c32a90);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 0.6px;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: #777;
+      margin-bottom: 20px;
+      letter-spacing: 0.4px;
+    }
+
+    .intro {
+      font-size: 14px;
+      line-height: 1.75;
+      text-align: justify;
+      margin-bottom: 20px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .skill-badge {
+      font-size: 12px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(255,134,195,0.12);
+      color: #c32a90;
+      font-weight: 500;
+    }
+
+    .divider {
+      height: 1px;
+      background: linear-gradient(to right, transparent, #ffd1e8, transparent);
+      margin: 20px 0;
+    }
+
+    footer {
+      font-size: 13px;
+      color: #777;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    
+    <img src="fotodiri2.jpg" alt="Foto Diri" class="profile-img">
+
+    <h1>Aurelia Ramadhani</h1>
+    <div class="subtitle">
+      Dental Therapist Undergraduate<br>
+      Hasanuddin University
+    </div>
+
+    <section class="intro">
+      I am an active undergraduate student in Dental Therapy at Hasanuddin University with a strong interest in developing professional skills and organizational experience. I am proficient in computer operation and office applications such as Microsoft Word and PowerPoint. In addition, I possess good communication, teamwork, analytical thinking, and leadership abilities, and I am able to adapt well in social and academic environments.
+    </section>
+
+    <div class="skills">
+      <span class="skill-badge">Communication</span>
+      <span class="skill-badge">Teamwork</span>
+      <span class="skill-badge">Scientific Literacy</span>
+      <span class="skill-badge">MS Office</span>
+      <span class="skill-badge">Design</span>
+    </div>
+
+    <div class="divider"></div>
+
+    <footer>
+      Alamat: Perumahan Bukit Tamarunang Violet Blok E27, Kecamatan Tamarunang, 
+      Kelurahan Somba Opu, Kabupaten Gowa, Provinsi Sulawesi Selatan
+    </footer>
+
+  </div>
+</body>
+</html>
